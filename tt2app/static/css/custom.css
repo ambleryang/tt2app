@@ -35,6 +35,22 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* line 709, mixins.less */
+.info {
+  text-align: center;
+  margin-top: 5px;
+  height: 40px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+/* line 716, mixins.less */
+.info strong {
+  display: block;
+  font-weight: bold;
+  line-height: 20px;
+  height: auto;
+  overflow: visible;
+}
 /* line 597, mixins.less */
 .row {
   margin-left: -11px;
@@ -461,114 +477,133 @@ a:focus {
 *@Author:      huxt
 *@Update:      huxt(2013-07-05 10:20)
 */
-/* line 13, form.less */
-#header-login {
+/* line 12, form.less */
+form {
+  margin: 0;
+}
+/* line 22, form.less */
+.header-collection {
   text-align: left;
   padding-top: 4px;
 }
-/* line 17, form.less */
-form {
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-/* line 22, form.less */
-#header-login .input {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #cccccc;
-  height: 16px;
-  line-height: 16px;
-  width: 100px;
-  padding: 1px;
+/* line 26, form.less */
+.header-recommend {
+  height: 18px;
+  line-height: 28px;
   margin: 0;
 }
-/* line 31, form.less */
-#header-login label {
-  display: inline-block;
-  font-size: 12px;
-}
-/* line 37, form.less */
+/* line 34, form.less */
 .header-link {
   list-style: none;
-  margin-bottom: 0;
 }
-/* line 41, form.less */
+/* line 37, form.less */
 .header-link .link-item {
-  padding: 0 8px;
+  padding: 0 0 0 40px;
   float: left;
   height: 30px;
 }
-/* line 46, form.less */
+/* line 42, form.less */
 .header-link .link-item a {
   line-height: 32px;
   vertical-align: middle;
 }
-/* line 52, form.less */
+/* line 49, form.less */
 #logo a {
   display: block;
   width: 215px;
   height: 100px;
 }
-/* line 59, form.less */
+/* line 57, form.less */
 #search-bar {
   display: inline;
   margin-top: 22px;
   height: 35px;
 }
-/* line 64, form.less */
+/* line 62, form.less */
 #search-bar .top-search {
-  width: 473px;
+  width: 530px;
   height: 20px;
   line-height: 21px;
   margin: 5px 0 0;
 }
-/* line 70, form.less */
+/* line 68, form.less */
 #search-bar .link-line {
-  list-style: none;
   height: 18px;
-  margin: 0;
   padding-left: 10px;
   margin-top: 5px;
 }
-/* line 77, form.less */
+/* line 73, form.less */
 #search-bar .link-line li {
   float: left;
 }
-/* line 80, form.less */
+/* line 76, form.less */
 #search-bar .link-line li a {
   padding: 0 5px;
 }
-/* line 85, form.less */
+/* line 82, form.less */
 #nav .navbar {
   margin-bottom: 5px;
 }
-/* line 90, form.less */
+/* line 88, form.less */
 #location {
   margin-bottom: 5px;
   height: 26px;
   line-height: 23px;
   overflow: hidden;
 }
-/* line 103, form.less */
-.category .main-block {
+/* line 101, form.less */
+.main-block {
+  margin-bottom: 10px;
+}
+/* line 104, form.less */
+.inner {
+  margin-top: -11px;
   border: 4px solid #e6e6e6;
 }
-/* line 106, form.less */
-.category .main-block .main-top {
-  border: 1px solid #cfcfcf;
-}
 /* line 109, form.less */
-.category .main-block .bs-docs-sidebar {
-  width: 56px;
-}
-/* line 112, form.less */
-.video-list ul {
-  list-style: none;
-  margin-left: 11px;
+.main {
+  border: 1px solid #cfcfcf;
+  padding: 5px;
 }
 /* line 116, form.less */
+.category {
+  border: 4px solid #e6e6e6;
+}
+/* line 119, form.less */
+.category .main-top {
+  border: 1px solid #cfcfcf;
+  padding: 5px;
+  padding-bottom: 0;
+}
+/* line 123, form.less */
+.category .bs-docs-sidebar {
+  width: 56px;
+}
+/* line 126, form.less */
+.category .video-list {
+  width: 595px;
+}
+/* line 129, form.less */
+.category .bs-docs-sidebar strong {
+  padding-left: 7px;
+}
+/* line 132, form.less */
+.category .bs-docs-sidebar .nav-list {
+  padding-right: 0;
+}
+/* line 135, form.less */
+.category .bs-docs-sidebar .nav-list a {
+  padding-right: 0;
+}
+/* line 138, form.less */
+.category .bs-docs-sidebar .nav-list .icon-chevron-right {
+  margin: 0 2px 0 8px;
+}
+/* line 141, form.less */
+.video-list ul {
+  margin-left: 11px;
+}
+/* line 144, form.less */
 .video-list ul li {
   float: left;
   width: 116px;
@@ -578,20 +613,103 @@ form {
   overflow: hidden;
   border-bottom: 1px dotted #e6e6e6;
 }
-/* line 125, form.less */
+/* line 153, form.less */
 .video-list ul li .cover {
   position: relative;
   display: inline-block;
   border: 1px solid #999999;
   line-height: 0;
 }
-/* line 131, form.less */
+/* line 159, form.less */
 .video-list ul li .cover .cover-img {
   display: block;
   vertical-align: middle;
   border: 1px solid #ffffff;
   width: 85px;
   height: 120px;
+}
+/* line 169, form.less */
+.entry-list {
+  padding-top: 6px;
+  *zoom: 1;
+}
+/* line 14, mixins.less */
+.entry-list:before,
+.entry-list:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, mixins.less */
+.entry-list:after {
+  clear: both;
+}
+/* line 173, form.less */
+.entry-list li {
+  float: left;
+  width: 167px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+/* line 179, form.less */
+.entry-list li .entry-cover {
+  display: inline-block;
+  border: 1px solid #999999;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+}
+/* line 186, form.less */
+.entry-list li .entry-cover img {
+  vertical-align: middle;
+  display: block;
+  border: 1px solid #ffffff;
+}
+/* line 196, form.less */
+.sort .side-block {
+  border: 4px solid #e6e6e6;
+}
+/* line 199, form.less */
+.sort .side-block .right-top {
+  border: 1px solid #cfcfcf;
+}
+/* line 204, form.less */
+.sort .carousel {
+  border: 1px solid #e6e6e6;
+}
+/* line 207, form.less */
+.sort .carousel .carousel-inner img {
+  border: 1px solid #ffffff;
+}
+/* line 212, form.less */
+.side-block .right-title {
+  margin: 0;
+  height: 30px;
+  overflow: auto;
+  zoom: 1;
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+}
+/* line 219, form.less */
+.side-block .right-title h5 {
+  float: left;
+  margin: 0;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+/* line 227, form.less */
+.side-block .right-title h5 span {
+  height: 17px;
+  padding-left: 5px;
+  border-left: 5px solid #9d261d;
 }
 /*
 *@Description: custom-movie > layouts.less
@@ -647,4 +765,47 @@ form {
 /* line 22, mixins.less */
 .container-fluid:after {
   clear: both;
+}
+/*
+*@Description: custom-movie > component.less
+*@Author:      huxt
+*@Update:      huxt(2013-07-08 17:04)
+*/
+/* line 12, component.less */
+.list-order {
+  *zoom: 1;
+  display: block;
+  padding: 0 0 10px 0;
+  margin: 5px 0;
+}
+/* line 14, mixins.less */
+.list-order:before,
+.list-order:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, mixins.less */
+.list-order:after {
+  clear: both;
+}
+/* line 18, component.less */
+.list-order .btn-mini {
+  font-size: 12px;
+  padding: 0 7px;
+}
+/* line 22, component.less */
+.list-order select {
+  width: 75px;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  height: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
