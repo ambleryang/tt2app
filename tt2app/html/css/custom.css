@@ -496,7 +496,7 @@ form {
 #header {
   height: 29px;
   position: relative;
-  z-index: 5;
+  /*z-index: 5;*/
   padding: 1px 0 2px;
   color: #999999;
   background-color: #f5f5f5;
@@ -564,7 +564,7 @@ form {
 }
 /* line 26, components.less */
 .header-link .link-item {
-  padding: 0 0 0 40px;
+  padding: 0 0 0 19px;
   float: left;
   height: 30px;
 }
