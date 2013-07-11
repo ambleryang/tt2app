@@ -977,13 +977,27 @@ form {
 }
 /* line 396, components.less */
 .intr .intr-inter-body {
-  height: 393px;
+  height: 191px;
 }
 /* line 399, components.less */
 .intr .intr-inter-body .video-list li {
   width: 135px;
 }
-/* line 408, components.less */
+/* line 409, components.less */
+.comment {
+  margin-top: 25px;
+}
+/* line 412, components.less */
+.comment .comment-title {
+  margin: 20px 0;
+}
+/* line 415, components.less */
+.comment .topic-item {
+  margin-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #e6e6e6;
+}
+/* line 428, components.less */
 .list-order {
   *zoom: 1;
   display: block;
@@ -1001,12 +1015,12 @@ form {
 .list-order:after {
   clear: both;
 }
-/* line 414, components.less */
+/* line 434, components.less */
 .list-order .btn-mini {
   font-size: 12px;
   padding: 0 7px;
 }
-/* line 418, components.less */
+/* line 438, components.less */
 .list-order select {
   width: 75px;
   vertical-align: middle;
