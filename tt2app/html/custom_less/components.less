@@ -1,0 +1,414 @@
+/*
+*@Description: custom-movie > component.less
+*@Author:      huxt
+*@Update:      huxt(2013-07-09 17:04)
+*/
+
+
+// Head component
+// -------------------------
+
+// header collection
+.header-collection {
+    text-align: left;
+    padding-top: 4px;
+}
+.header-recommend {
+    height: 18px;
+    line-height: 28px;
+    margin: 0;
+}
+
+// header > link
+.header-link {
+    list-style: none;
+    margin-left: 36px;
+}
+.header-link .link-item {
+    padding: 0 0 0 22px;
+    float: left;
+    height: 30px;
+}
+.header-link .link-item a {
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+
+
+// Banner component
+// -------------------------
+
+// banner
+#logo a {
+    display: block;
+    width: 215px;
+    height: 100px;
+}
+
+// search
+#search-bar {
+    display: inline;
+    margin-top: 22px;
+    height: 35px;
+}
+#search-bar .top-search {
+    width: 530px;
+    height: 20px;
+    line-height: 21px;
+    margin: 5px 0 0;
+}
+#search-bar .link-line {
+    height: 18px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+#search-bar .link-line li {
+    float: left;
+}
+#search-bar .link-line li a {
+    padding: 0 5px;
+}
+
+
+
+// Nav component
+// -------------------------
+
+// nav
+#nav .navbar {
+    margin-bottom: 5px;
+}
+
+
+
+// Location component
+// -------------------------
+
+// current location
+#location {
+    margin: 5px auto;
+    height: 30px;
+    line-height: 23px;
+    overflow: hidden;
+}
+#location .attention {
+    display: inline-block;
+    height: 27px;
+    margin-left: 50px;
+}
+#location .attention .btn {
+    height: 27px;
+    padding: 2px 15px;
+}
+
+
+
+// List content component
+// -------------------------
+
+// main block
+.main-block {
+    margin-bottom: 10px;
+}
+.inner {
+    margin-top: -11px;
+    border: 4px solid @grayLighter;
+
+}
+.main {
+    border: 1px solid @blocksolid;
+    padding: 5px;
+}
+
+// video-list
+.category {
+    border: 4px solid @grayLighter;
+}
+.category .main-top {
+    .main();
+    padding-bottom: 0;
+}
+.category .bs-docs-sidebar {
+    width: 80px;
+}
+.category .video-list {
+    width: 611px;
+}
+.category .bs-docs-sidebar strong {
+    padding-left: 7px;
+}
+.category .bs-docs-sidebar .nav-list {
+    padding-right: 0;
+}
+.category .bs-docs-sidebar .nav-list a {
+    padding-right: 0;
+}
+.category .bs-docs-sidebar .nav-list .icon-chevron-right {
+    margin: 0 2px 0 8px;
+}
+.video-list ul {
+    margin-left: 11px;
+}
+.video-list ul li {
+    float: left;
+    width: 120px;
+    height: 171px;
+    text-align: center;
+    padding: 15px 0;
+    overflow: hidden;
+    border-bottom: 1px dotted @grayLighter;
+}
+
+// entry video list
+.entry-list {
+    padding-top: 6px;
+    .clearfix();
+}
+.entry-list li {
+    float: left;
+    width: 181px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+
+
+// Side component
+// -------------------------
+
+// general
+.side-block {
+    border: 4px solid @grayLighter;
+    margin-bottom: 10px;
+}
+.sort .side-block .right-top {
+    border: 1px solid @blocksolid;
+}
+
+// carousel
+.sort .carousel {
+    border: 1px solid @grayLighter;
+}
+.sort .carousel .carousel-inner img {
+    border: 1px solid @white;
+}
+
+// sort-side-box
+.side-block .right-title {
+    margin: 0;
+    height: 30px;
+    overflow: auto;
+    zoom: 1;
+    #gradient > .vertical(@white, @grayLighter);
+}
+.side-block .right-title h5 {
+    float: left;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.side-block .right-title h5 span {
+    height: 17px;
+    padding-left: 5px;
+    border-left: 5px solid @red;
+}
+.side-block .platform {
+    border-bottom: 1px dotted @grayLighter;
+    color: @grayLight;
+    margin: 0 10px;
+    padding: 3px 0;
+}
+.side-block .platform h6 {
+    margin: 0;
+    padding: 0;
+}
+.side-block .platform li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.side-block .year li {
+    padding: 0 3px;
+}
+
+// side list
+.side-list li {
+    border-bottom: 1px dotted #CCCCCC;
+    vertical-align: bottom;
+    overflow: hidden;
+    margin: 0 10px;
+    height: 30px;
+}
+.side-list li .pull-left {
+    padding-left: 10px;
+    line-height: 30px;
+    overflow: hidden;
+    width: 170px;
+}
+.side-list li .pull-right {
+    color: #888888;
+    display: block;
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    width: 50px;
+}
+
+
+// Content component
+// -------------------------
+
+// content
+.content .main-top {
+    .main();
+    border: 4px solid @grayLighter;
+    background-color: @grayLighter;
+}
+.content .main-top .main-title {
+    height: 48px;
+}
+.content .main-top .main-body {
+    border: 1px solid @blocksolid;
+    background-color: @white;
+}
+.content .main-top .main-body .head-info {
+    .clearfix();
+    padding: 12px 15px 15px;
+}
+.content .main-top .main-body .head-info .head-info-left {
+    float: left;
+    overflow: hidden;
+    width: 477px;
+}
+.content .main-top .main-body .head-info .head-info-left .img-info {
+    color: @grayDark;
+    float: right;
+    min-height: 174px;
+    overflow: hidden;
+    position: relative;
+    width: 345px;
+    ul {
+        .clearfix();
+    }
+}
+.content .main-top .main-body .head-info .head-info-left .img-info .entry-info li {
+    height: 29px;
+    line-height: 29px;
+    overflow: hidden;
+    .item {
+        display: inline-block;
+        margin-right: 22px;
+        vertical-align: top;
+    }
+}
+.content .main-top .main-body .head-info .head-info-right {
+    color: #666;
+    float: right;
+    line-height: 20px;
+    overflow: hidden;
+    width: 155px;
+}
+.content .main-top .main-body .head-info .head-info-right .entry-status {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.content .main-top .main-body .head-info .head-info-right li {
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.content .main-top .main-body .head-info .head-info-right .stat-text {
+    float: left;
+    color: #666;
+}
+.content .main-top .main-body .head-info .head-info-right .stat-text-bar {
+    float: left;
+    height: 14px;
+    padding: 4px 2px 0 6px;
+    span {
+        display: block;
+        background-color: #f3e0dd;
+        overflow: hidden;
+        height: 12px;
+    }
+}
+.head-info-bottom {
+    .clearfix();
+}
+.head-info-bottom .head-info-more {
+    color: #666666;
+    float: left;
+    margin-top: -5px;
+    text-align: center;
+    width: 124px;
+}
+
+
+
+// Introduction component
+// -------------------------
+
+// intro
+.intr {
+    padding: 0 16px 10px 16px;
+}
+.intr .intr-title,.intr .intr-pic {
+    height: 35px;
+    border-bottom: 1px dotted @grayLight;
+    padding: 7px 5px 0 0;
+}
+.intr .intr-title h4 {
+    width: 50px;
+}
+.intr .intr-title ul {
+    width: 150px;
+    margin: 10px 0 0 0;
+}
+.intr .intr-title li {
+    float: left;
+    padding: 0 5px;
+}
+.intr .intr-body {
+    padding: 10px 0 0 0;
+    line-height: 24px;
+}
+
+
+// Order
+// -------------------------
+
+// list order
+.list-order {
+    .clearfix();
+    display: block;
+    padding: 0 0 10px 0;
+    margin: 5px 0;
+}
+.list-order .btn-mini {
+    font-size: 12px;
+    padding: 0 7px;
+}
+.list-order select {
+    width: 75px;
+    vertical-align: middle;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+
+
+
+

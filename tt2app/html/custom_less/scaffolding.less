@@ -1,0 +1,67 @@
+/*
+*@Description: custom-movie > scaffolding.less
+*@Author:      huxt
+*@Update:      huxt(2013-07-05 10:20)
+*/
+
+
+
+// Body
+// -------------------------
+
+body {
+  margin: 0;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @textColor;
+  background-color: @bodyBackground;
+}
+
+
+
+// Links
+// -------------------------
+
+a {
+  color: @linkColor;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: @linkColorHover;
+  text-decoration: underline;
+}
+
+
+
+// Images
+// -------------------------
+
+// small image
+.small-cover {
+    position: relative;
+    display: inline-block;
+    border: 1px solid @grayLight;
+    line-height: 0;
+    img {
+        vertical-align: middle;
+        border: 1px solid @white;
+        height: 120px;
+    }
+}
+
+// big image
+.big-cover {
+    display: inline-block;
+    border: 1px solid @grayLight;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    img {
+        vertical-align: middle;
+        display: block;
+        border: 1px solid @white;
+    }
+}
+

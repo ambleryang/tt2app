@@ -19,11 +19,80 @@
                 <div class="header-recommend span6">
                     <span><a href="">发现你想看的电影</a></span>
                 </div>
-                <ul class="header-link span3 offset1">
-                    <li class="link-item"><a href="">登陆</a></li>
+                <ul class="header-link span3">
+                    <li class="link-item">
+                        <!--<a href="javascript:;" id="login_model">登陆</a>-->
+                        <a href="#login_modal" role="button" data-toggle="modal">登陆</a>
+                    </li>
                     <li class="link-item"><a href="">注册</a></li>
                     <li class="link-item"><a href="">忘记密码</a></li>
+                    <li class="link-item"><a href="">我正在看</a></li>
                 </ul>
+                <div id="login_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true" style="width: 700px;height: 300px;margin-left:-350px">
+                    <div style="width:60px;margin: 120px auto;">
+                        Loading...
+                    </div>
+                </div>
+                <script>
+                    $('#login_modal').on('show', function () {
+                            var data = '<div class="modal-header">' +
+    '    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">' +
+    '        ×' +
+    '    </button>' +
+    '    <h3 id="LoginModalLabel">登录</h3>' +
+    '</div>' +
+    '<ul class="thumbnails">' +
+
+    '    <li class="span5">' +
+
+    '        <form id="login_form" action="/login/form" class="form-horizontal" style="margin-left:auto; margin-right:auto;width:350px" onsubmit="do_login();return false;">' +
+
+
+
+    '            <input type="hidden" name="csrfmiddlewaretoken" value="ChucweCjT0XsK9eCeJN8t1QGxZJtdnyB" />' +
+    '              <div id="login_form_alert" class="alert alert-error fade in" style="display:none;margin-top: 15px">' +
+
+    '                <button type="button" class="close" data-dismiss="alert">' +
+    '                    &times;' +
+    '                </button>' +
+    '                用户名或密码错误！' +
+    '            </div>' +
+    '            <p  style="margin-top: 25px;" >' +
+
+    '              <input id="id_username" type="text" name="username" maxlength="100" placeholder="用户名/邮箱"/>' +
+    '              <span  id="login_form_error_username" style="margin-left: 10px; color: red;display: none">*请输入用户名！</span>' +
+
+    '            </p>' +
+    '            <p style="margin-top: 15px;" >' +
+
+    '                    <input type="password" name="password" id="id_password" placeholder="密码"/>' +
+    '                    <span  id="login_form_error_password" style="margin-left: 10px; color: red;display: none">*请输入密码！</span>' +
+
+    '            </p>' +
+
+    '            <label>记住密码：' +
+    '                <input type="checkbox" name="remember" value="1" checked style="margin-top: 0px;" />' +
+    '                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a>忘记密码？</a></label>' +
+    '            <button id="login_btn" type="submit" class="btn btn-primary" style="width: 220px">' +
+    '                登&nbsp;&nbsp;录' +
+    '            </button>' +
+    '            <br/>' +
+    '            <br/>' +
+
+    '        </form>' +
+
+    '    </li>' +
+    '    <li class="span4">' +
+    '        <div style="margin-top: 25px">' +
+    '            *&nbsp;还没有账号？<a href="/register">立即注册</a>' +
+    '        </div>' +
+    '    </li>' +
+
+    '</ul>' ;
+                            $('#login_modal').html(data);
+
+                    });
+                </script>
             </div>
         </div>
     </div>
@@ -32,12 +101,13 @@
             <div id="logo" class="span3">
                 <a href=""><img src="img/logo.png" alt=""></a>
             </div>
-            <div id="search-bar" class="span9 offset1">
+            <div id="search-bar" class="span9">
                 <form action="">
                     <input type="text" class="top-search">
                     <div class="btn-group">
                       <button class="btn">搜索</button>
                       <button class="btn">高级搜索</button>
+
                     </div>
                 </form>
                 <ul class="link-line unstyled">
@@ -54,22 +124,23 @@
         </div>
     </div>
     <div id="nav" class="container">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <ul class="nav">
-                    <li><a href="">首页</a></li>
-                    <li><a href="">电影</a></li>
-                    <li><a href="">剧集</a></li>
-                    <li><a href="">美剧</a></li>
-                    <li><a href="">韩剧</a></li>
-                    <li><a href="">动漫</a></li>
-                    <li><a href="">综艺</a></li>
-                    <li><a href="">读书</a></li>
-                    <li><a href="">公开课</a></li>
-                </ul>
-            </div>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <ul class="nav">
+                <li><a href="">首页</a></li>
+                <li><a href="">电影</a></li>
+                <li><a href="">剧集</a></li>
+                <li><a href="">美剧</a></li>
+                <li><a href="">韩剧</a></li>
+                <li><a href="">动漫</a></li>
+                <li><a href="">综艺</a></li>
+                <li><a href="">读书</a></li>
+                <li><a href="">公开课</a></li>
+            </ul>
         </div>
     </div>
+</div>
+
     <div id="location" class="container">
         您的位置：
         <a href="">推推大全</a>
@@ -164,19 +235,210 @@
                                         <a href=""><span>815</span>人评分</a>
                                     </div>
                                     <ul class="unstyled">
-                                        <li><span class="stat-text"></span><span></span><span></span></li>
-                                        <li><span></span><span></span><span></span></li>
-                                        <li><span></span><span></span><span></span></li>
-                                        <li><span></span><span></span><span></span></li>
-                                        <li><span></span><span></span><span></span></li>
+                                        <li><span class="stat-text">超赞</span><span class="stat-text-bar"><span style="width: 75px;"></span></span><span class="stat-text">7人</span></li>
+                                        <li><span class="stat-text">不错</span><span class="stat-text-bar"><span style="width: 5px;"></span></span><span class="stat-text">1人</span></li>
+                                        <li><span class="stat-text">一般</span><span class="stat-text-bar"><span style="width: 25px;"></span></span><span class="stat-text">2人</span></li>
+                                        <li><span class="stat-text">较差</span><span class="stat-text-bar"><span style="width: 15px;"></span></span><span class="stat-text">1人</span></li>
+                                        <li><span class="stat-text">垃圾</span><span class="stat-text-bar"><span style="width: 0px;"></span></span><span class="stat-text">0人</span></li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div class="head-info-bottom">
+                                <div class="head-info-more">
+                                    <span class="visit-time">
+                                        浏览
+                                        <em>5975次</em>
+                                    </span>
+                                    <br>
+                                    <span>
+                                        口水
+                                        <a href="">10</a>
+                                    </span>
+                                </div>
+                                <div class="entry-button">
+                                    <button class="btn btn-primary">在线观看</button>
+                                    <button class="btn btn-primary">想看</button>
+                                </div>
+                                <div class="entry-status"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="main-block">
+                    <div class="main intr">
+                        <div class="intr-title">
+                            <h4 class="pull-left">简介</h4>
+                            <ul class="unstyled pull-right">
+                                <li><a href="">流口水</a></li>
+                                <li><a href="">编辑资料</a></li>
+                                <li><a href="">添加</a></li>
+                            </ul>
+                        </div>
+                        <div class="intr-body">
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无女沟结他三兄弟十足骑呢, 当教师的大佬胜一积极筹办单身野餐会, 长髮二佬 Masaru 日夜苦练结他冧女, 三佬则是个终日吃个不停的外籍肥仔 胜一在温泉旅馆巧遇健康食品社长 Ichigo, 她正跟两位好姊妹前来渡假, 三位女孩互诉匪夷所思的故事 英语教师 Takefumi 跟毕业生 Notti 似友非友, 二人呆在家中听歌打碟, 细数千奇百怪的梦境 校园内, 一位靚靚学生妹被捉来拯救外星人, 学生们拿著各种呕心乐器奏乐, 羽毛球女生则在体育馆决战吸血虫 来到 homeroom 时间, 学生逐一分享个人经历, 听学级委员长示范如何打招呼 单身野餐会当日, 只有一班寡佬出席, 却发现男士们为觅佳偶各自下过不少苦功 ナイスの森 (nice 森林) 21个片段绝对疯狂兼无厘头, 敬请诸君勿用常理推敲解释</p>
+                        </div>
+                        <div class="intr-pic">
+                            <h4 class="pull-left">图片</h4>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="span4 sort"></div>
+            <div class="span3 sort">
+                <div id="myCarousel" class="side-block carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                       <div class="active item">
+                           <a href=""><img src="img/1.jpg" alt=""></a>
+                       </div>
+                       <div class="item">
+                           <a href=""><img src="img/2.jpg" alt=""></a>
+                       </div>
+                       <div class="item">
+                           <a href=""><img src="img/4.jpg" alt=""></a>
+                       </div>
+                    </div>
+                    <!-- Carousel nav -->
+                </div>
+                <div class="side-block">
+                    <div class="right-top">
+                        <div class="right-title">
+                            <h5>
+                                <span>电影分类检索</span>
+                            </h5>
+                        </div>
+                        <div>
+                            <div class="platform">
+                                <h6>按类型</h6>
+                                <ul class="unstyled">
+                                    <li><a href="">动作</a></li>
+                                    <li>|</li>
+                                    <li><a href="">喜剧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">爱情</a></li>
+                                    <li>|</li>
+                                    <li><a href="">恐怖</a></li>
+                                    <li><a href="">剧情</a></li>
+                                    <li>|</li>
+                                    <li><a href="">战争</a></li>
+                                    <li>|</li>
+                                    <li><a href="">惊悚</a></li>
+                                    <li>|</li>
+                                    <li><a href="">短片</a></li>
+                                    <li><a href="">纪录</a></li>
+                                    <li>|</li>
+                                    <li><a href="">幽默</a></li>
+                                    <li>|</li>
+                                    <li><a href="">黑色</a></li>
+                                    <li>|</li>
+                                    <li><a href="">历史</a></li>
+                                    <li><a href="">科幻</a></li>
+                                    <li>|</li>
+                                    <li><a href="">音乐</a></li>
+                                    <li>|</li>
+                                    <li><a href="">传记</a></li>
+                                    <li><a href="" class="info-more">更多》</a></li>
+                                </ul>
+                            </div>
+                            <div class="platform year">
+                                <h6>按年代</h6>
+                                <ul class="unstyled">
+                                    <li><a href="">2013</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2012</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2011</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2010</a></li>
+                                    <li><a href="">2009</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2008</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2007</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2006</a></li>
+                                    <li><a href="">2005</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2004</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2003</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2002</a></li>
+                                    <li><a href="">2001</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2000</a></li>
+                                    <li>|</li>
+                                    <li><a href="">1999</a></li>
+                                    <li><a href="" class="info-more">更多》</a></li>
+                                </ul>
+                            </div>
+                            <div class="platform">
+                                <h6>按地区</h6>
+                                <ul class="unstyled">
+                                    <li><a href="">大陆</a></li>
+                                    <li>|</li>
+                                    <li><a href="">香港</a></li>
+                                    <li>|</li>
+                                    <li><a href="">台湾</a></li>
+                                    <li>|</li>
+                                    <li><a href="">美国</a></li>
+                                    <li><a href="">日本</a></li>
+                                    <li>|</li>
+                                    <li><a href="">韩国</a></li>
+                                    <li>|</li>
+                                    <li><a href="">英国</a></li>
+                                    <li>|</li>
+                                    <li><a href="">法国</a></li>
+                                    <li><a href="">泰国</a></li>
+                                    <li>|</li>
+                                    <li><a href="">印度</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-block">
+                    <div class="right-top">
+                        <div class="right-title">
+                            <h5>
+                                <span>电影今日热播榜</span>
+                            </h5>
+                        </div>
+                        <div>
+                            <div class="side-list">
+                                <ul class="unstyled">
+                                    <li><span class="pull-left"><a href="">《北京遇上西雅图》</a></span><span class="pull-right">2386</span></li>
+                                    <li><span class="pull-left"><a href="">《春假学生》</a></span><span class="pull-right">2251</span></li>
+                                    <li><span class="pull-left"><a href="">《卑鄙的我》</a></span><span class="pull-right">964</span></li>
+                                    <li><span class="pull-left"><a href="">《新淑女时代》</a></span><span class="pull-right">781</span></li>
+                                    <li><span class="pull-left"><a href="">《星巴克》</a></span><span class="pull-right">529</span></li>
+                                    <li><span class="pull-left"><a href="">《蜂鸟》</a></span><span class="pull-right">481</span></li>
+                                    <li><span class="pull-left"><a href="">《亚特兰蒂斯》</a></span><span class="pull-right">434</span></li>
+                                    <li><span class="pull-left"><a href="">《忍者舞娘》</a></span><span class="pull-right">429</span></li>
+                                    <li><span class="pull-left"><a href="">《强迫症》</a></span><span class="pull-right">385</span></li>
+                                    <li><span class="pull-left"><a href="">《太极侠》</a></span><span class="pull-right">334</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-block">
+                    <div class="right-top">
+                        <div class="right-title">
+                            <h5>
+                                <span>影院热映</span>
+                            </h5>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>

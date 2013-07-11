@@ -1,0 +1,36 @@
+/*
+*@Description: custom-movie > layouts.less
+*@Author:      huxt
+*@Update:      huxt(2013-07-05 10:20)
+*/
+
+
+
+// Head
+// -------------------------
+
+#header {
+    height: @headerHeight;
+    position: relative;
+    padding: 1px 0 2px;
+    color: @grayLight;
+    #gradient > .vertical(@white, @grayLighter);
+}
+
+
+// Container (centered, fixed-width layouts)
+// -------------------------
+
+.container {
+  .container-fixed();
+}
+
+
+// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+// -------------------------
+
+.container-fluid {
+  padding-right: @gridGutterWidth;
+  padding-left: @gridGutterWidth;
+  .clearfix();
+}
