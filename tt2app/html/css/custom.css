@@ -921,10 +921,9 @@ form {
   padding: 0 16px 10px 16px;
 }
 /* line 360, components.less */
-.intr .intr-title,
-.intr .intr-pic {
-  height: 35px;
+.intr .intr-title {
   border-bottom: 1px dotted #999999;
+  height: 35px;
   padding: 7px 5px 0 0;
 }
 /* line 365, components.less */
@@ -946,7 +945,32 @@ form {
   padding: 10px 0 0 0;
   line-height: 24px;
 }
-/* line 386, components.less */
+/* line 380, components.less */
+.intr .intr-pic-body {
+  *zoom: 1;
+  display: block;
+  margin-top: 10px;
+}
+/* line 14, mixins.less */
+.intr .intr-pic-body:before,
+.intr .intr-pic-body:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, mixins.less */
+.intr .intr-pic-body:after {
+  clear: both;
+}
+/* line 385, components.less */
+.intr .intr-pic-body li {
+  float: left;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 160px;
+}
+/* line 398, components.less */
 .list-order {
   *zoom: 1;
   display: block;
@@ -964,12 +988,12 @@ form {
 .list-order:after {
   clear: both;
 }
-/* line 392, components.less */
+/* line 404, components.less */
 .list-order .btn-mini {
   font-size: 12px;
   padding: 0 7px;
 }
-/* line 396, components.less */
+/* line 408, components.less */
 .list-order select {
   width: 75px;
   vertical-align: middle;
