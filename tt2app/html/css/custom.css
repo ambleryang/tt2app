@@ -928,7 +928,7 @@ form {
 }
 /* line 365, components.less */
 .intr .intr-title h4 {
-  width: 50px;
+  width: auto;
 }
 /* line 368, components.less */
 .intr .intr-title ul {
@@ -968,9 +968,22 @@ form {
   height: auto;
   overflow: hidden;
   text-align: center;
-  width: 160px;
+  width: 165px;
 }
-/* line 398, components.less */
+/* line 392, components.less */
+.intr .intr-pic .intr-pic-ft {
+  padding: 15px 0 5px;
+  text-align: right;
+}
+/* line 396, components.less */
+.intr .intr-inter-body {
+  height: 393px;
+}
+/* line 399, components.less */
+.intr .intr-inter-body .video-list li {
+  width: 135px;
+}
+/* line 408, components.less */
 .list-order {
   *zoom: 1;
   display: block;
@@ -988,12 +1001,12 @@ form {
 .list-order:after {
   clear: both;
 }
-/* line 404, components.less */
+/* line 414, components.less */
 .list-order .btn-mini {
   font-size: 12px;
   padding: 0 7px;
 }
-/* line 408, components.less */
+/* line 418, components.less */
 .list-order select {
   width: 75px;
   vertical-align: middle;
