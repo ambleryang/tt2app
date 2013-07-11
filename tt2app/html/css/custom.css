@@ -438,9 +438,8 @@ a:focus {
 .small-cover img {
   vertical-align: middle;
   border: 1px solid #ffffff;
-  height: 120px;
 }
-/* line 55, scaffolding.less */
+/* line 54, scaffolding.less */
 .big-cover {
   display: inline-block;
   border: 1px solid #999999;
@@ -448,10 +447,9 @@ a:focus {
   font-size: 0;
   line-height: 0;
 }
-/* line 61, scaffolding.less */
+/* line 60, scaffolding.less */
 .big-cover img {
   vertical-align: middle;
-  display: block;
   border: 1px solid #ffffff;
 }
 /*
