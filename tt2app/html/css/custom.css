@@ -453,7 +453,7 @@ a:focus {
   border: 1px solid #ffffff;
 }
 /*
-*@Description: custom-movie > form.less
+*@Description: custom-movie > forms.less
 *@Author:      huxt
 *@Update:      huxt(2013-07-05 10:20)
 */
@@ -516,9 +516,9 @@ form {
   clear: both;
 }
 /*
-*@Description: custom-movie > component.less
+*@Description: custom-movie > components.less
 *@Author:      huxt
-*@Update:      huxt(2013-07-09 17:04)
+*@Update:      huxt(2013-07-12 09:14)
 */
 /* line 12, components.less */
 .header-collection {
@@ -997,7 +997,30 @@ form {
   padding-bottom: 15px;
   border-bottom: 1px dotted #e6e6e6;
 }
-/* line 428, components.less */
+/* line 427, components.less */
+.editor-title {
+  margin: 20px 0;
+}
+/* line 430, components.less */
+.editor-body {
+  position: relative;
+  background-color: #ffffff;
+}
+/* line 434, components.less */
+.editor-body .editor-wrap {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  min-height: 88px;
+}
+/* line 439, components.less */
+.editor .submit {
+  margin: 5px 0;
+}
+/* line 442, components.less */
+.editor .submit .btn {
+  padding: 4px 20px;
+}
+/* line 452, components.less */
 .list-order {
   *zoom: 1;
   display: block;
@@ -1015,12 +1038,12 @@ form {
 .list-order:after {
   clear: both;
 }
-/* line 434, components.less */
+/* line 458, components.less */
 .list-order .btn-mini {
   font-size: 12px;
   padding: 0 7px;
 }
-/* line 438, components.less */
+/* line 462, components.less */
 .list-order select {
   width: 75px;
   vertical-align: middle;
