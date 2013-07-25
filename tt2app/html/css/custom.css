@@ -942,9 +942,9 @@ form {
   width: auto;
 }
 /* line 377, components.less */
-.intr .intr-title ul {
-  width: 150px;
-  margin: 10px 0 0 0;
+.intr .intr-title .nav {
+  height: 25px;
+  margin: 10px -12px 0 0;
 }
 /* line 381, components.less */
 .intr .intr-title li {
@@ -952,11 +952,33 @@ form {
   padding: 0 5px;
 }
 /* line 385, components.less */
+.intr .intr-title li i {
+  margin: 0 1px 0 0;
+}
+/* line 388, components.less */
+.intr .intr-title li a {
+  padding: 0 5px;
+}
+/* line 391, components.less */
+.intr .intr-title li .caret {
+  margin-top: 8px;
+}
+/* line 394, components.less */
+.intr .intr-title li .dropdown-menu {
+  min-width: 70px;
+}
+/* line 397, components.less */
+.intr .intr-title .open a:focus {
+  background-color: #999999;
+  border-color: #999999;
+  color: #ffffff;
+}
+/* line 402, components.less */
 .intr .intr-text {
   padding: 10px 0 0 0;
   line-height: 24px;
 }
-/* line 389, components.less */
+/* line 406, components.less */
 .intr .intr-pic-body {
   *zoom: 1;
   display: block;
@@ -973,7 +995,7 @@ form {
 .intr .intr-pic-body:after {
   clear: both;
 }
-/* line 394, components.less */
+/* line 411, components.less */
 .intr .intr-pic-body li {
   float: left;
   height: auto;
@@ -981,64 +1003,64 @@ form {
   text-align: center;
   width: 165px;
 }
-/* line 401, components.less */
+/* line 418, components.less */
 .intr .intr-pic .intr-pic-ft {
   padding: 15px 0 5px;
   text-align: right;
 }
-/* line 412, components.less */
+/* line 429, components.less */
 .inter-title {
   border-bottom: 1px dotted #999999;
   height: 35px;
   padding: 7px 5px 0 0;
 }
-/* line 419, components.less */
+/* line 436, components.less */
 .inter-body {
   height: 191px;
 }
-/* line 422, components.less */
+/* line 439, components.less */
 .inter-body .video-list li {
   width: 141px;
   border: none;
 }
-/* line 433, components.less */
+/* line 450, components.less */
 .comment {
   margin-top: 25px;
 }
-/* line 436, components.less */
+/* line 453, components.less */
 .comment .comment-title {
   margin: 20px 0;
 }
-/* line 439, components.less */
+/* line 456, components.less */
 .comment .topic-item {
   margin-top: 10px;
   padding-bottom: 15px;
   border-bottom: 1px dotted #e6e6e6;
 }
-/* line 451, components.less */
+/* line 468, components.less */
 .editor-title {
   margin: 20px 0;
 }
-/* line 454, components.less */
+/* line 471, components.less */
 .editor-body {
   position: relative;
   background-color: #ffffff;
 }
-/* line 458, components.less */
+/* line 475, components.less */
 .editor-body .editor-wrap {
   padding: 8px 10px;
   border: 1px solid #ccc;
   min-height: 88px;
 }
-/* line 463, components.less */
+/* line 480, components.less */
 .editor .submit {
   margin: 5px 0;
 }
-/* line 466, components.less */
+/* line 483, components.less */
 .editor .submit .btn {
   padding: 4px 20px;
 }
-/* line 476, components.less */
+/* line 493, components.less */
 .list-order {
   *zoom: 1;
   display: block;
@@ -1056,12 +1078,12 @@ form {
 .list-order:after {
   clear: both;
 }
-/* line 482, components.less */
+/* line 499, components.less */
 .list-order .btn-mini {
   font-size: 12px;
   padding: 0 7px;
 }
-/* line 486, components.less */
+/* line 503, components.less */
 .list-order select {
   width: 75px;
   vertical-align: middle;
