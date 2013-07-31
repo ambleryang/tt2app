@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>addPicture</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header-collection span3">
+                    <strong>收藏推推兔</strong>
+                </div>
+                <div class="header-recommend span6">
+                    <span><a href="">发现你想看的电影</a></span>
+                </div>
+                <ul class="header-link span3">
+                    <li class="link-item">
+                        <!--<a href="javascript:;" id="login_model">登陆</a>-->
+                        <a href="#login_modal" role="button" data-toggle="modal">登陆</a>
+                    </li>
+                    <li class="link-item"><a href="register.htm">注册</a></li>
+                    <li class="link-item"><a href="forget.htm">忘记密码</a></li>
+                    <li class="link-item"><a href="">我正在看</a></li>
+                </ul>
+                <div id="login_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true" style="width: 700px;height: 300px;margin-left:-350px">
+                    <div style="width:60px;margin: 120px auto;">
+                        Loading...
+                    </div>
+                </div>
+                <script>
+                    $('#login_modal').on('show', function () {
+                            var data = '<div class="modal-header">' +
+    '    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">' +
+    '        ×' +
+    '    </button>' +
+    '    <h3 id="LoginModalLabel">登录</h3>' +
+    '</div>' +
+    '<ul class="thumbnails">' +
+
+    '    <li class="span5">' +
+
+    '        <form id="login_form" action="/login/form" class="form-horizontal" style="margin-left:auto; margin-right:auto;width:350px" onsubmit="do_login();return false;">' +
+
+
+
+    '            <input type="hidden" name="csrfmiddlewaretoken" value="ChucweCjT0XsK9eCeJN8t1QGxZJtdnyB" />' +
+    '              <div id="login_form_alert" class="alert alert-error fade in" style="display:none;margin-top: 15px">' +
+
+    '                <button type="button" class="close" data-dismiss="alert">' +
+    '                    &times;' +
+    '                </button>' +
+    '                用户名或密码错误！' +
+    '            </div>' +
+    '            <p  style="margin-top: 25px;" >' +
+
+    '              <input id="id_username" type="text" name="username" maxlength="100" placeholder="用户名/邮箱"/>' +
+    '              <span  id="login_form_error_username" style="margin-left: 10px; color: red;display: none">*请输入用户名！</span>' +
+
+    '            </p>' +
+    '            <p style="margin-top: 15px;" >' +
+
+    '                    <input type="password" name="password" id="id_password" placeholder="密码"/>' +
+    '                    <span  id="login_form_error_password" style="margin-left: 10px; color: red;display: none">*请输入密码！</span>' +
+
+    '            </p>' +
+
+    '            <label>记住密码：' +
+    '                <input type="checkbox" name="remember" value="1" checked style="margin-top: 0px;" />' +
+    '                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a>忘记密码？</a></label>' +
+    '            <button id="login_btn" type="submit" class="btn btn-primary" style="width: 220px">' +
+    '                登&nbsp;&nbsp;录' +
+    '            </button>' +
+    '            <br/>' +
+    '            <br/>' +
+
+    '        </form>' +
+
+    '    </li>' +
+    '    <li class="span4">' +
+    '        <div style="margin-top: 25px">' +
+    '            *&nbsp;还没有账号？<a href="/register">立即注册</a>' +
+    '        </div>' +
+    '    </li>' +
+
+    '</ul>' ;
+                            $('#login_modal').html(data);
+
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="banner" class="container">
+        <div class="row">
+            <div id="logo" class="span3">
+                <a href=""><img src="img/logo.png" alt=""></a>
+            </div>
+            <div id="search-bar" class="span9">
+                <form action="">
+                    <input type="text" class="top-search">
+                    <div class="btn-group">
+                      <button class="btn">搜索</button>
+                      <button class="btn">高级搜索</button>
+
+                    </div>
+                </form>
+                <ul class="link-line unstyled">
+                    <li>热门搜索：</li>
+                    <li><a href="">速度与激情6</a></li>
+                    <li><a href="">小时代</a></li>
+                    <li><a href="">疯狂的原始人</a></li>
+                    <li><a href="">僵尸世界大战</a></li>
+                    <li><a href="">特种部队2</a></li>
+                    <li><a href="">钢铁侠3</a></li>
+                    <li><a href="">超人</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="nav" class="container">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <ul class="nav">
+                <li><a href="">首页</a></li>
+                <li><a href="">电影</a></li>
+                <li><a href="">剧集</a></li>
+                <li><a href="">美剧</a></li>
+                <li><a href="">韩剧</a></li>
+                <li><a href="">动漫</a></li>
+                <li><a href="">综艺</a></li>
+                <li><a href="">读书</a></li>
+                <li><a href="">公开课</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="location" class="container">
+        您的位置：
+        <a href="">推推大全</a>
+        >
+        <a href="">电影</a>
+        >
+        <a href="">杀手乔</a>
+        <p class="attention"><button type="submit" class="btn btn-primary">关注更新</button></p>
+    </div>
+    <div id="main-content" class="container">
+        <div class="row">
+            <div class="span9">
+                <div class="main-block content">
+                    <div class="main-top">
+                        <div class="main-title">
+                            <h4>北京遇上西雅图<span>2013</span></h4>
+                            <h6>Seeking Mr.Right</h6>
+                        </div>
+                        <div class="main-body">
+                            <div style="margin-left:20px;">
+                                <h4>添加图片</h4>
+                                <p>添加的图片需经过人工审核，通过审核后才能获取经验。</p>
+                            </div>
+                            <div class="input-append" style="margin-left:20px;">
+                                <input class="input-xxlarge" type="text" placeholder="在这里输入你要添加的图片的URL地址">
+                                <button class="btn" type="button">添加</button>
+                            </div>
+                            <div style="margin: 20px 0;padding: 19px 20px 20px 20px;">
+                              <button type="submit" class="btn btn-small">选择并上传</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span3 sort">
+                <div id="myCarousel" class="side-block carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                       <div class="active item">
+                           <a href=""><img src="img/1.jpg" alt=""></a>
+                       </div>
+                       <div class="item">
+                           <a href=""><img src="img/2.jpg" alt=""></a>
+                       </div>
+                       <div class="item">
+                           <a href=""><img src="img/4.jpg" alt=""></a>
+                       </div>
+                    </div>
+                    <!-- Carousel nav -->
+                </div>
+                <div class="side-block">
+                    <div class="right-top">
+                        <div class="right-title">
+                            <h5>
+                                <span>电影分类检索</span>
+                            </h5>
+                        </div>
+                        <div>
+                            <div class="platform">
+                                <h6>按类型</h6>
+                                <ul class="unstyled">
+                                    <li><a href="">动作</a></li>
+                                    <li>|</li>
+                                    <li><a href="">喜剧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">爱情</a></li>
+                                    <li>|</li>
+                                    <li><a href="">恐怖</a></li>
+                                    <li><a href="">剧情</a></li>
+                                    <li>|</li>
+                                    <li><a href="">战争</a></li>
+                                    <li>|</li>
+                                    <li><a href="">惊悚</a></li>
+                                    <li>|</li>
+                                    <li><a href="">短片</a></li>
+                                    <li><a href="">纪录</a></li>
+                                    <li>|</li>
+                                    <li><a href="">幽默</a></li>
+                                    <li>|</li>
+                                    <li><a href="">黑色</a></li>
+                                    <li>|</li>
+                                    <li><a href="">历史</a></li>
+                                    <li><a href="">科幻</a></li>
+                                    <li>|</li>
+                                    <li><a href="">音乐</a></li>
+                                    <li>|</li>
+                                    <li><a href="">传记</a></li>
+                                    <li><a href="" class="info-more">更多》</a></li>
+                                </ul>
+                            </div>
+                            <div class="platform year">
+                                <h6>按年代</h6>
+                                <ul class="unstyled">
+                                    <li><a href="">2013</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2012</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2011</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2010</a></li>
+                                    <li><a href="">2009</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2008</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2007</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2006</a></li>
+                                    <li><a href="">2005</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2004</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2003</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2002</a></li>
+                                    <li><a href="">2001</a></li>
+                                    <li>|</li>
+                                    <li><a href="">2000</a></li>
+                                    <li>|</li>
+                                    <li><a href="">1999</a></li>
+                                    <li><a href="" class="info-more">更多》</a></li>
+                                </ul>
+                            </div>
+                            <div class="platform">
+                                <h6>按地区</h6>
+                                <ul class="unstyled">
+                                    <li><a href="">大陆</a></li>
+                                    <li>|</li>
+                                    <li><a href="">香港</a></li>
+                                    <li>|</li>
+                                    <li><a href="">台湾</a></li>
+                                    <li>|</li>
+                                    <li><a href="">美国</a></li>
+                                    <li><a href="">日本</a></li>
+                                    <li>|</li>
+                                    <li><a href="">韩国</a></li>
+                                    <li>|</li>
+                                    <li><a href="">英国</a></li>
+                                    <li>|</li>
+                                    <li><a href="">法国</a></li>
+                                    <li><a href="">泰国</a></li>
+                                    <li>|</li>
+                                    <li><a href="">印度</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
