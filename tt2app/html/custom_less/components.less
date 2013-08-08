@@ -102,7 +102,7 @@
     overflow: hidden;
 }
 #location .attention {
-    display: inline-block;
+    display: inline-block;*display: inline;
     height: 27px;
     margin-left: 50px;
 }
@@ -165,7 +165,6 @@
     height: 171px;
     text-align: center;
     padding: 15px 0;
-    overflow: hidden;
     border-bottom: 1px dotted @grayLighter;
 }
 
@@ -235,7 +234,7 @@
     padding: 0;
 }
 .side-block .platform li {
-    display: inline-block;
+    display: inline-block;*display: inline;*zoom:1;
     padding: 0 5px;
 }
 .side-block .year li {
@@ -437,9 +436,37 @@
     height: 191px;
 }
 .inter-body .video-list li {
+    position: relative;
     width: 141px;
     border: none;
 }
+
+// entry tip
+.entry-tip {
+    position:absolute;
+    width:270px;
+    height:175px;
+    background-color:@white;
+    border:1px solid #cfcfcf;
+    top:3px;
+    left:16px;
+    z-index:3;
+}
+.entry-tip .entry-tip-box {
+    padding:8px;
+    text-align:left;
+}
+.entry-tip .entry-tip-box .entry-tip-list {
+    height:123px;
+    width:160px;
+    padding-left:98px;
+    margin:0 0 10px 0;
+    dd {
+        margin:0;
+    }
+}
+
+
 
 
 

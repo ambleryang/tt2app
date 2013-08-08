@@ -40,26 +40,45 @@ a:focus {
 
 // small image
 .small-cover {
-    position: relative;
-    display: inline-block;
+    .clearfix();
+    display: inline-block;*zoom:1;*display:inline;
+    padding: 1px;
     border: 1px solid @grayLight;
     line-height: 0;
     img {
         vertical-align: middle;
-        border: 1px solid @white;
     }
 }
 
 // big image
 .big-cover {
-    display: inline-block;
+    .clearfix();
+    display: inline-block;*zoom:1;*display:inline;
+    padding: 1px;
     border: 1px solid @grayLight;
-    position: relative;
     font-size: 0;
     line-height: 0;
     img {
         vertical-align: middle;
-        border: 1px solid @white;
     }
 }
 
+
+// GENERAL STYLES
+// --------------
+
+// movie
+.info {
+    text-align: center;
+    margin-top: 5px;
+    height: 40px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.info strong {
+    display: block;
+    font-weight: bold;
+    line-height: 20px;
+    height: auto;
+    overflow: visible;
+}

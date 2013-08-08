@@ -35,22 +35,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 709, mixins.less */
-.info {
-  text-align: center;
-  margin-top: 5px;
-  height: 40px;
-  overflow: hidden;
-  padding: 0 10px;
-}
-/* line 716, mixins.less */
-.info strong {
-  display: block;
-  font-weight: bold;
-  line-height: 20px;
-  height: auto;
-  overflow: visible;
-}
 /* line 597, mixins.less */
 .row {
   margin-left: -18px;
@@ -429,28 +413,68 @@ a:focus {
 }
 /* line 42, scaffolding.less */
 .small-cover {
-  position: relative;
   display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  padding: 1px;
   border: 1px solid #999999;
   line-height: 0;
 }
-/* line 47, scaffolding.less */
+/* line 14, mixins.less */
+.small-cover:before,
+.small-cover:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, mixins.less */
+.small-cover:after {
+  clear: both;
+}
+/* line 48, scaffolding.less */
 .small-cover img {
   vertical-align: middle;
-  border: 1px solid #ffffff;
 }
 /* line 54, scaffolding.less */
 .big-cover {
   display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  padding: 1px;
   border: 1px solid #999999;
-  position: relative;
   font-size: 0;
   line-height: 0;
 }
-/* line 60, scaffolding.less */
+/* line 14, mixins.less */
+.big-cover:before,
+.big-cover:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, mixins.less */
+.big-cover:after {
+  clear: both;
+}
+/* line 61, scaffolding.less */
 .big-cover img {
   vertical-align: middle;
-  border: 1px solid #ffffff;
+}
+/* line 71, scaffolding.less */
+.info {
+  text-align: center;
+  margin-top: 5px;
+  height: 40px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+/* line 78, scaffolding.less */
+.info strong {
+  display: block;
+  font-weight: bold;
+  line-height: 20px;
+  height: auto;
+  overflow: visible;
 }
 /*
 *@Description: custom-movie > forms.less
@@ -605,6 +629,7 @@ form {
 /* line 104, components.less */
 #location .attention {
   display: inline-block;
+  *display: inline;
   height: 27px;
   margin-left: 50px;
 }
@@ -672,10 +697,9 @@ form {
   height: 171px;
   text-align: center;
   padding: 15px 0;
-  overflow: hidden;
   border-bottom: 1px dotted #e6e6e6;
 }
-/* line 173, components.less */
+/* line 172, components.less */
 .entry-list {
   padding-top: 6px;
   *zoom: 1;
@@ -691,31 +715,31 @@ form {
 .entry-list:after {
   clear: both;
 }
-/* line 177, components.less */
+/* line 176, components.less */
 .entry-list li {
   float: left;
   width: 181px;
   padding-bottom: 16px;
   text-align: center;
 }
-/* line 190, components.less */
+/* line 189, components.less */
 .side-block {
   border: 4px solid #e6e6e6;
   margin-bottom: 10px;
 }
-/* line 194, components.less */
+/* line 193, components.less */
 .sort .side-block .right-top {
   border: 1px solid #cfcfcf;
 }
-/* line 199, components.less */
+/* line 198, components.less */
 .sort .carousel {
   border: 1px solid #e6e6e6;
 }
-/* line 202, components.less */
+/* line 201, components.less */
 .sort .carousel .carousel-inner img {
   border: 1px solid #ffffff;
 }
-/* line 207, components.less */
+/* line 206, components.less */
 .side-block .right-title {
   margin: 0;
   height: 30px;
@@ -730,7 +754,7 @@ form {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
 }
-/* line 214, components.less */
+/* line 213, components.less */
 .side-block .right-title h5 {
   float: left;
   margin: 0;
@@ -739,34 +763,36 @@ form {
   padding-left: 10px;
   font-weight: bold;
 }
-/* line 222, components.less */
+/* line 221, components.less */
 .side-block .right-title h5 span {
   height: 17px;
   padding-left: 5px;
   border-left: 5px solid #9d261d;
 }
-/* line 227, components.less */
+/* line 226, components.less */
 .side-block .platform {
   border-bottom: 1px dotted #e6e6e6;
   color: #999999;
   margin: 0 10px;
   padding: 3px 0;
 }
-/* line 233, components.less */
+/* line 232, components.less */
 .side-block .platform h6 {
   margin: 0;
   padding: 0;
 }
-/* line 237, components.less */
+/* line 236, components.less */
 .side-block .platform li {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   padding: 0 5px;
 }
-/* line 241, components.less */
+/* line 240, components.less */
 .side-block .year li {
   padding: 0 3px;
 }
-/* line 246, components.less */
+/* line 245, components.less */
 .side-list li {
   border-bottom: 1px dotted #CCCCCC;
   vertical-align: bottom;
@@ -774,14 +800,14 @@ form {
   margin: 0 10px;
   height: 30px;
 }
-/* line 253, components.less */
+/* line 252, components.less */
 .side-list li .pull-left {
   padding-left: 10px;
   line-height: 30px;
   overflow: hidden;
   width: 170px;
 }
-/* line 259, components.less */
+/* line 258, components.less */
 .side-list li .pull-right {
   color: #888888;
   display: block;
@@ -791,23 +817,23 @@ form {
   text-align: right;
   width: 50px;
 }
-/* line 274, components.less */
+/* line 273, components.less */
 .content .main-top {
   border: 1px solid #cfcfcf;
   padding: 5px;
   border: 4px solid #e6e6e6;
   background-color: #e6e6e6;
 }
-/* line 279, components.less */
+/* line 278, components.less */
 .content .main-top .main-title {
   height: 48px;
 }
-/* line 282, components.less */
+/* line 281, components.less */
 .content .main-top .main-body {
   border: 1px solid #cfcfcf;
   background-color: #ffffff;
 }
-/* line 286, components.less */
+/* line 285, components.less */
 .content .main-top .main-body .head-info {
   *zoom: 1;
   padding: 12px 15px 15px;
@@ -823,13 +849,13 @@ form {
 .content .main-top .main-body .head-info:after {
   clear: both;
 }
-/* line 290, components.less */
+/* line 289, components.less */
 .content .main-top .main-body .head-info .head-info-left {
   float: left;
   overflow: hidden;
   width: 477px;
 }
-/* line 295, components.less */
+/* line 294, components.less */
 .content .main-top .main-body .head-info .head-info-left .img-info {
   color: #333333;
   float: right;
@@ -838,7 +864,7 @@ form {
   position: relative;
   width: 345px;
 }
-/* line 302, components.less */
+/* line 301, components.less */
 .content .main-top .main-body .head-info .head-info-left .img-info ul {
   *zoom: 1;
 }
@@ -853,19 +879,19 @@ form {
 .content .main-top .main-body .head-info .head-info-left .img-info ul:after {
   clear: both;
 }
-/* line 306, components.less */
+/* line 305, components.less */
 .content .main-top .main-body .head-info .head-info-left .img-info .entry-info li {
   height: 29px;
   line-height: 29px;
   overflow: hidden;
 }
-/* line 310, components.less */
+/* line 309, components.less */
 .content .main-top .main-body .head-info .head-info-left .img-info .entry-info li .item {
   display: inline-block;
   margin-right: 22px;
   vertical-align: top;
 }
-/* line 316, components.less */
+/* line 315, components.less */
 .content .main-top .main-body .head-info .head-info-right {
   color: #666;
   float: right;
@@ -873,12 +899,12 @@ form {
   overflow: hidden;
   width: 155px;
 }
-/* line 323, components.less */
+/* line 322, components.less */
 .content .main-top .main-body .head-info .head-info-right .entry-status {
   margin-bottom: 5px;
   overflow: hidden;
 }
-/* line 327, components.less */
+/* line 326, components.less */
 .content .main-top .main-body .head-info .head-info-right li {
   height: 20px;
   line-height: 20px;
@@ -886,25 +912,25 @@ form {
   overflow: hidden;
   vertical-align: middle;
 }
-/* line 334, components.less */
+/* line 333, components.less */
 .content .main-top .main-body .head-info .head-info-right .stat-text {
   float: left;
   color: #666;
 }
-/* line 338, components.less */
+/* line 337, components.less */
 .content .main-top .main-body .head-info .head-info-right .stat-text-bar {
   float: left;
   height: 14px;
   padding: 4px 2px 0 6px;
 }
-/* line 342, components.less */
+/* line 341, components.less */
 .content .main-top .main-body .head-info .head-info-right .stat-text-bar span {
   display: block;
   background-color: #f3e0dd;
   overflow: hidden;
   height: 12px;
 }
-/* line 349, components.less */
+/* line 348, components.less */
 .head-info-bottom {
   *zoom: 1;
 }
@@ -919,7 +945,7 @@ form {
 .head-info-bottom:after {
   clear: both;
 }
-/* line 352, components.less */
+/* line 351, components.less */
 .head-info-bottom .head-info-more {
   color: #666666;
   float: left;
@@ -927,58 +953,58 @@ form {
   text-align: center;
   width: 124px;
 }
-/* line 366, components.less */
+/* line 365, components.less */
 .intr {
   padding: 0 16px 10px 16px;
 }
-/* line 369, components.less */
+/* line 368, components.less */
 .intr .intr-title {
   border-bottom: 1px dotted #999999;
   height: 35px;
   padding: 7px 5px 0 0;
 }
-/* line 374, components.less */
+/* line 373, components.less */
 .intr .intr-title h4 {
   width: auto;
 }
-/* line 377, components.less */
+/* line 376, components.less */
 .intr .intr-title .nav {
   height: 25px;
   margin: 10px -12px 0 0;
 }
-/* line 381, components.less */
+/* line 380, components.less */
 .intr .intr-title li {
   float: left;
   padding: 0 5px;
 }
-/* line 385, components.less */
+/* line 384, components.less */
 .intr .intr-title li i {
   margin: 0 1px 0 0;
 }
-/* line 388, components.less */
+/* line 387, components.less */
 .intr .intr-title li a {
   padding: 0 5px;
 }
-/* line 391, components.less */
+/* line 390, components.less */
 .intr .intr-title li .caret {
   margin-top: 8px;
 }
-/* line 394, components.less */
+/* line 393, components.less */
 .intr .intr-title li .dropdown-menu {
   min-width: 70px;
 }
-/* line 397, components.less */
+/* line 396, components.less */
 .intr .intr-title .open a:focus {
   background-color: #999999;
   border-color: #999999;
   color: #ffffff;
 }
-/* line 402, components.less */
+/* line 401, components.less */
 .intr .intr-text {
   padding: 10px 0 0 0;
   line-height: 24px;
 }
-/* line 406, components.less */
+/* line 405, components.less */
 .intr .intr-pic-body {
   *zoom: 1;
   display: block;
@@ -995,7 +1021,7 @@ form {
 .intr .intr-pic-body:after {
   clear: both;
 }
-/* line 411, components.less */
+/* line 410, components.less */
 .intr .intr-pic-body li {
   float: left;
   height: auto;
@@ -1003,64 +1029,92 @@ form {
   text-align: center;
   width: 165px;
 }
-/* line 418, components.less */
+/* line 417, components.less */
 .intr .intr-pic .intr-pic-ft {
   padding: 15px 0 5px;
   text-align: right;
 }
-/* line 429, components.less */
+/* line 428, components.less */
 .inter-title {
   border-bottom: 1px dotted #999999;
   height: 35px;
   padding: 7px 5px 0 0;
 }
-/* line 436, components.less */
+/* line 435, components.less */
 .inter-body {
   height: 191px;
 }
-/* line 439, components.less */
+/* line 438, components.less */
 .inter-body .video-list li {
+  position: relative;
   width: 141px;
   border: none;
 }
-/* line 450, components.less */
+/* line 445, components.less */
+.entry-tip {
+  position: absolute;
+  width: 270px;
+  height: 175px;
+  background-color: #ffffff;
+  border: 1px solid #cfcfcf;
+  top: 3px;
+  left: 16px;
+  z-index: 3;
+}
+/* line 455, components.less */
+.entry-tip .entry-tip-box {
+  padding: 8px;
+  text-align: left;
+}
+/* line 459, components.less */
+.entry-tip .entry-tip-box .entry-tip-list {
+  height: 123px;
+  width: 160px;
+  padding-left: 98px;
+  margin: 0 0 10px 0;
+}
+/* line 464, components.less */
+.entry-tip .entry-tip-box .entry-tip-list dd {
+  margin: 0;
+}
+/* line 477, components.less */
 .comment {
   margin-top: 25px;
 }
-/* line 453, components.less */
+/* line 480, components.less */
 .comment .comment-title {
   margin: 20px 0;
 }
-/* line 456, components.less */
+/* line 483, components.less */
 .comment .topic-item {
   margin-top: 10px;
   padding-bottom: 15px;
   border-bottom: 1px dotted #e6e6e6;
 }
-/* line 468, components.less */
+/* line 495, components.less */
 .editor-title {
   margin: 20px 0;
 }
-/* line 471, components.less */
+/* line 498, components.less */
 .editor-body {
   position: relative;
   background-color: #ffffff;
 }
-/* line 475, components.less */
+/* line 502, components.less */
 .editor-body .editor-wrap {
   padding: 8px 10px;
   border: 1px solid #ccc;
   min-height: 88px;
 }
-/* line 480, components.less */
+/* line 507, components.less */
 .editor .submit {
   margin: 5px 0;
 }
-/* line 483, components.less */
+/* line 510, components.less */
 .editor .submit .btn {
   padding: 4px 20px;
 }
-/* line 493, components.less */
+/* line 520, components.less */
 .list-order {
   *zoom: 1;
   display: block;
@@ -1078,12 +1132,12 @@ form {
 .list-order:after {
   clear: both;
 }
-/* line 499, components.less */
+/* line 526, components.less */
 .list-order .btn-mini {
   font-size: 12px;
   padding: 0 7px;
 }
-/* line 503, components.less */
+/* line 530, components.less */
 .list-order select {
   width: 75px;
   vertical-align: middle;
