@@ -9,15 +9,8 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/forum/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    var AM_Config = {
-        baseUrl: "http://i3.qasbs.com/trunk/js/forum",
-        baseVersion:"?v=0.6.7.101707"
-    };
-</script>
-<script type="text/javascript" src="http://i3.qasbs.com/trunk/js/forum/AM.js?v=0.6.7.101707"></script>
     <div id="header">
         <div class="container">
             <div class="row">
@@ -356,8 +349,8 @@
                             <div class="inter-body">
                                 <div class="video-list" >
                                     <ul class="unstyled">
-                                        <li style="z-index:9;">
-                                            <div class="small-cover" style="position:relative;z-index:6;">
+                                        <li style="position:relative;">
+                                            <div class="small-cover" style="position:relative;">
                                                 <a href="">
                                                     <img src="img/3.jpg" alt="">
                                                 </a>
@@ -371,27 +364,10 @@
                                                     <a href="">艾玛</a>
                                                 </span>
                                             </div>
-                                            <div class="entry-tip">
-                                                <div class="entry-tip-box">
-                                                    <dl class="entry-tip-list">
-                                                        <dt class="entry-tip-title">
-                                                            <a href="">《北京遇上西雅图》</a>
-                                                        </dt>
-                                                        <dd>地区：大陆</dd>
-                                                        <dd>年代：2013</dd>
-                                                        <dd>演员：汤唯/吴秀波/海清</dd>
-                                                    </dl>
-                                                    <div>
-                                                        <button>在线观看</button>
-                                                        <button>想看</button>
-                                                        <span>116人想看</span>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </li>
                                         <li style="position:relative;">
                                             <a href="">
-                                                <div class="small-cover">
+                                                <div class="small-cover" style="position:relative;">
                                                     <img src="img/3.jpg" alt="">
                                                 </div>
                                             </a>
@@ -407,7 +383,7 @@
                                         </li>
                                         <li style="position:relative;">
                                             <a href="">
-                                                <div class="small-cover">
+                                                <div class="small-cover" style="position:relative;">
                                                     <img src="img/3.jpg" alt="">
                                                 </div>
                                             </a>
@@ -423,7 +399,7 @@
                                         </li>
                                         <li style="position:relative;">
                                             <a href="">
-                                                <div class="small-cover">
+                                                <div class="small-cover" style="position:relative;">
                                                     <img src="img/3.jpg" alt="">
                                                 </div>
                                             </a>
@@ -437,9 +413,9 @@
                                                 </span>
                                             </div>
                                         </li>
-                                        <li >
+                                        <li style="position:relative;">
                                             <a href="">
-                                                <div class="small-cover">
+                                                <div class="small-cover" style="position:relative;">
                                                     <img src="img/3.jpg" alt="">
                                                 </div>
                                             </a>
@@ -460,6 +436,10 @@
                     </div>
                 </div>
                 <div class="main-block comment">
+                    <div class="quick-comment">
+                        <button class="btn btn-primary" type="button">快速回复</button>
+                        <span><i class="icon-play"></i></span>
+                    </div>
                     <div class="comment-title">
                         <h4>评论</h4>
                     </div>
@@ -702,5 +682,6 @@
             </div>
         </div>
     </div>
+<script type="text/javascript" src="js\recommend-board-info.js"></script>
 </body>
 </html>
