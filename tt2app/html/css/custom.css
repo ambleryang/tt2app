@@ -1152,3 +1152,10 @@ form {
   white-space: nowrap;
   box-sizing: border-box;
 }
+/* line 551, components.less */
+.quick-editor {
+  background: none repeat scroll 0 0 #ffffff;
+  margin-top: 10px;
+  min-height: 88px;
+  position: relative;
+}

@@ -21,7 +21,7 @@
                             '<dd>演员：汤唯/吴秀波/海清</dd>',
                         '</dl>',
                         '<div>',
-                            '<button>在线观看</button>',
+                            '<button style="margin-right:5px;">在线观看</button>',
                             '<button>想看</button>',
                             '<span>116人想看</span>',
                         '</div>',
