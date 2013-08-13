@@ -1159,3 +1159,45 @@ form {
   min-height: 88px;
   position: relative;
 }
+/* line 556, components.less */
+.quick-editor .btn {
+  margin-top: 5px;
+}
+/* line 570, components.less */
+.pic-carousel .pic-main {
+  margin-top: 10px;
+}
+/* line 573, components.less */
+.pic-carousel .pic-main .show-area {
+  overflow: hidden;
+  position: relative;
+  width: 775px;
+}
+/* line 578, components.less */
+.pic-carousel .pre-arrow {
+  background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  outline: medium none;
+  overflow: hidden;
+  padding-left: 350px;
+  position: absolute;
+  top: 0;
+  width: 0;
+  left: 0;
+}
+/* line 591, components.less */
+.pic-carousel .next-arrow {
+  background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  outline: medium none;
+  overflow: hidden;
+  padding-left: 350px;
+  position: absolute;
+  top: 0;
+  width: 0;
+  right: 0;
+}
