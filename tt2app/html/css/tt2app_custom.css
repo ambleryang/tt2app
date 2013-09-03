@@ -665,32 +665,34 @@ form {
 /* line 141, components.less */
 .category .bs-docs-sidebar {
   width: 80px;
+  *margin-left: 13px;
 }
-/* line 144, components.less */
+/* line 145, components.less */
 .category .video-list {
   width: 611px;
+  *margin-left: 13px;
 }
-/* line 147, components.less */
+/* line 149, components.less */
 .category .bs-docs-sidebar strong {
   padding-left: 7px;
 }
-/* line 150, components.less */
+/* line 152, components.less */
 .category .bs-docs-sidebar .nav-list {
   padding-right: 0;
 }
-/* line 153, components.less */
+/* line 155, components.less */
 .category .bs-docs-sidebar .nav-list a {
   padding-right: 0;
 }
-/* line 156, components.less */
+/* line 158, components.less */
 .category .bs-docs-sidebar .nav-list .icon-chevron-right {
   margin: 0 2px 0 8px;
 }
-/* line 159, components.less */
+/* line 161, components.less */
 .video-list ul {
   margin-left: 11px;
 }
-/* line 162, components.less */
+/* line 164, components.less */
 .video-list ul li {
   float: left;
   width: 120px;
@@ -699,7 +701,7 @@ form {
   padding: 15px 0;
   border-bottom: 1px dotted #e6e6e6;
 }
-/* line 172, components.less */
+/* line 174, components.less */
 .entry-list {
   padding-top: 6px;
   *zoom: 1;
@@ -715,31 +717,31 @@ form {
 .entry-list:after {
   clear: both;
 }
-/* line 176, components.less */
+/* line 178, components.less */
 .entry-list li {
   float: left;
   width: 181px;
   padding-bottom: 16px;
   text-align: center;
 }
-/* line 189, components.less */
+/* line 191, components.less */
 .side-block {
   border: 4px solid #e6e6e6;
   margin-bottom: 10px;
 }
-/* line 193, components.less */
+/* line 195, components.less */
 .sort .side-block .right-top {
   border: 1px solid #cfcfcf;
 }
-/* line 198, components.less */
+/* line 200, components.less */
 .sort .carousel {
   border: 1px solid #e6e6e6;
 }
-/* line 201, components.less */
+/* line 203, components.less */
 .sort .carousel .carousel-inner img {
   border: 1px solid #ffffff;
 }
-/* line 206, components.less */
+/* line 208, components.less */
 .side-block .right-title {
   margin: 0;
   height: 30px;
@@ -754,7 +756,7 @@ form {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
 }
-/* line 213, components.less */
+/* line 215, components.less */
 .side-block .right-title h5 {
   float: left;
   margin: 0;
@@ -763,36 +765,36 @@ form {
   padding-left: 10px;
   font-weight: bold;
 }
-/* line 221, components.less */
+/* line 223, components.less */
 .side-block .right-title h5 span {
   height: 17px;
   padding-left: 5px;
   border-left: 5px solid #9d261d;
 }
-/* line 226, components.less */
+/* line 228, components.less */
 .side-block .platform {
   border-bottom: 1px dotted #e6e6e6;
   color: #999999;
   margin: 0 10px;
   padding: 3px 0;
 }
-/* line 232, components.less */
+/* line 234, components.less */
 .side-block .platform h6 {
   margin: 0;
   padding: 0;
 }
-/* line 236, components.less */
+/* line 238, components.less */
 .side-block .platform li {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   padding: 0 5px;
 }
-/* line 240, components.less */
+/* line 242, components.less */
 .side-block .year li {
   padding: 0 3px;
 }
-/* line 245, components.less */
+/* line 247, components.less */
 .side-list li {
   border-bottom: 1px dotted #CCCCCC;
   vertical-align: bottom;
@@ -800,14 +802,14 @@ form {
   margin: 0 10px;
   height: 30px;
 }
-/* line 252, components.less */
+/* line 254, components.less */
 .side-list li .pull-left {
   padding-left: 10px;
   line-height: 30px;
   overflow: hidden;
   width: 170px;
 }
-/* line 258, components.less */
+/* line 260, components.less */
 .side-list li .pull-right {
   color: #888888;
   display: block;
@@ -817,23 +819,23 @@ form {
   text-align: right;
   width: 50px;
 }
-/* line 273, components.less */
+/* line 275, components.less */
 .content .main-top {
   border: 1px solid #cfcfcf;
   padding: 5px;
   border: 4px solid #e6e6e6;
   background-color: #e6e6e6;
 }
-/* line 278, components.less */
+/* line 280, components.less */
 .content .main-top .main-title {
   height: 48px;
 }
-/* line 281, components.less */
+/* line 283, components.less */
 .content .main-top .main-body {
   border: 1px solid #cfcfcf;
   background-color: #ffffff;
 }
-/* line 285, components.less */
+/* line 287, components.less */
 .content .main-top .main-body .head-info {
   *zoom: 1;
   padding: 12px 15px 15px;
@@ -849,13 +851,13 @@ form {
 .content .main-top .main-body .head-info:after {
   clear: both;
 }
-/* line 289, components.less */
+/* line 291, components.less */
 .content .main-top .main-body .head-info .head-info-left {
   float: left;
   overflow: hidden;
   width: 477px;
 }
-/* line 294, components.less */
+/* line 296, components.less */
 .content .main-top .main-body .head-info .head-info-left .img-info {
   color: #333333;
   float: right;
@@ -864,7 +866,7 @@ form {
   position: relative;
   width: 345px;
 }
-/* line 301, components.less */
+/* line 303, components.less */
 .content .main-top .main-body .head-info .head-info-left .img-info ul {
   *zoom: 1;
 }
@@ -879,19 +881,19 @@ form {
 .content .main-top .main-body .head-info .head-info-left .img-info ul:after {
   clear: both;
 }
-/* line 305, components.less */
+/* line 307, components.less */
 .content .main-top .main-body .head-info .head-info-left .img-info .entry-info li {
   height: 29px;
   line-height: 29px;
   overflow: hidden;
 }
-/* line 309, components.less */
+/* line 311, components.less */
 .content .main-top .main-body .head-info .head-info-left .img-info .entry-info li .item {
   display: inline-block;
   margin-right: 22px;
   vertical-align: top;
 }
-/* line 315, components.less */
+/* line 317, components.less */
 .content .main-top .main-body .head-info .head-info-right {
   color: #666;
   float: right;
@@ -899,12 +901,12 @@ form {
   overflow: hidden;
   width: 155px;
 }
-/* line 322, components.less */
+/* line 324, components.less */
 .content .main-top .main-body .head-info .head-info-right .entry-status {
   margin-bottom: 5px;
   overflow: hidden;
 }
-/* line 326, components.less */
+/* line 328, components.less */
 .content .main-top .main-body .head-info .head-info-right li {
   height: 20px;
   line-height: 20px;
@@ -912,25 +914,25 @@ form {
   overflow: hidden;
   vertical-align: middle;
 }
-/* line 333, components.less */
+/* line 335, components.less */
 .content .main-top .main-body .head-info .head-info-right .stat-text {
   float: left;
   color: #666;
 }
-/* line 337, components.less */
+/* line 339, components.less */
 .content .main-top .main-body .head-info .head-info-right .stat-text-bar {
   float: left;
   height: 14px;
   padding: 4px 2px 0 6px;
 }
-/* line 341, components.less */
+/* line 343, components.less */
 .content .main-top .main-body .head-info .head-info-right .stat-text-bar span {
   display: block;
   background-color: #f3e0dd;
   overflow: hidden;
   height: 12px;
 }
-/* line 348, components.less */
+/* line 350, components.less */
 .head-info-bottom {
   *zoom: 1;
 }
@@ -945,7 +947,7 @@ form {
 .head-info-bottom:after {
   clear: both;
 }
-/* line 351, components.less */
+/* line 353, components.less */
 .head-info-bottom .head-info-more {
   color: #666666;
   float: left;
@@ -953,58 +955,58 @@ form {
   text-align: center;
   width: 124px;
 }
-/* line 365, components.less */
+/* line 367, components.less */
 .intr {
   padding: 0 16px 10px 16px;
 }
-/* line 368, components.less */
+/* line 370, components.less */
 .intr .intr-title {
   border-bottom: 1px dotted #999999;
   height: 35px;
   padding: 7px 5px 0 0;
 }
-/* line 373, components.less */
+/* line 375, components.less */
 .intr .intr-title h4 {
   width: auto;
 }
-/* line 376, components.less */
+/* line 378, components.less */
 .intr .intr-title .nav {
   height: 25px;
   margin: 10px -12px 0 0;
 }
-/* line 380, components.less */
+/* line 382, components.less */
 .intr .intr-title li {
   float: left;
   padding: 0 5px;
 }
-/* line 384, components.less */
+/* line 386, components.less */
 .intr .intr-title li i {
   margin: 0 1px 0 0;
 }
-/* line 387, components.less */
+/* line 389, components.less */
 .intr .intr-title li a {
   padding: 0 5px;
 }
-/* line 390, components.less */
+/* line 392, components.less */
 .intr .intr-title li .caret {
   margin-top: 8px;
 }
-/* line 393, components.less */
+/* line 395, components.less */
 .intr .intr-title li .dropdown-menu {
   min-width: 70px;
 }
-/* line 396, components.less */
+/* line 398, components.less */
 .intr .intr-title .open a:focus {
   background-color: #999999;
   border-color: #999999;
   color: #ffffff;
 }
-/* line 401, components.less */
+/* line 403, components.less */
 .intr .intr-text {
   padding: 10px 0 0 0;
   line-height: 24px;
 }
-/* line 405, components.less */
+/* line 407, components.less */
 .intr .intr-pic-body {
   *zoom: 1;
   display: block;
@@ -1021,7 +1023,7 @@ form {
 .intr .intr-pic-body:after {
   clear: both;
 }
-/* line 410, components.less */
+/* line 412, components.less */
 .intr .intr-pic-body li {
   float: left;
   height: auto;
@@ -1029,28 +1031,28 @@ form {
   text-align: center;
   width: 165px;
 }
-/* line 417, components.less */
+/* line 419, components.less */
 .intr .intr-pic .intr-pic-ft {
   padding: 15px 0 5px;
   text-align: right;
 }
-/* line 428, components.less */
+/* line 430, components.less */
 .inter-title {
   border-bottom: 1px dotted #999999;
   height: 35px;
   padding: 7px 5px 0 0;
 }
-/* line 435, components.less */
+/* line 437, components.less */
 .inter-body {
   height: 191px;
 }
-/* line 438, components.less */
+/* line 440, components.less */
 .inter-body .video-list li {
   position: relative;
   width: 141px;
   border: none;
 }
-/* line 445, components.less */
+/* line 447, components.less */
 .entry-tip {
   position: absolute;
   width: 270px;
@@ -1061,60 +1063,60 @@ form {
   left: 16px;
   z-index: 3;
 }
-/* line 455, components.less */
+/* line 457, components.less */
 .entry-tip .entry-tip-box {
   padding: 8px;
   text-align: left;
 }
-/* line 459, components.less */
+/* line 461, components.less */
 .entry-tip .entry-tip-box .entry-tip-list {
   height: 123px;
   width: 160px;
   padding-left: 98px;
   margin: 0 0 10px 0;
 }
-/* line 464, components.less */
+/* line 466, components.less */
 .entry-tip .entry-tip-box .entry-tip-list dd {
   margin: 0;
 }
-/* line 477, components.less */
+/* line 479, components.less */
 .comment {
   margin-top: 25px;
 }
-/* line 480, components.less */
+/* line 482, components.less */
 .comment .comment-title {
   margin: 20px 0;
 }
-/* line 483, components.less */
+/* line 485, components.less */
 .comment .topic-item {
   margin-top: 10px;
   padding-bottom: 15px;
   border-bottom: 1px dotted #e6e6e6;
 }
-/* line 495, components.less */
+/* line 497, components.less */
 .editor-title {
   margin: 20px 0;
 }
-/* line 498, components.less */
+/* line 500, components.less */
 .editor-body {
   position: relative;
   background-color: #ffffff;
 }
-/* line 502, components.less */
+/* line 504, components.less */
 .editor-body .editor-wrap {
   padding: 8px 10px;
   border: 1px solid #ccc;
   min-height: 88px;
 }
-/* line 507, components.less */
+/* line 509, components.less */
 .editor .submit {
   margin: 5px 0;
 }
-/* line 510, components.less */
+/* line 512, components.less */
 .editor .submit .btn {
   padding: 4px 20px;
 }
-/* line 520, components.less */
+/* line 522, components.less */
 .list-order {
   *zoom: 1;
   display: block;
@@ -1132,12 +1134,12 @@ form {
 .list-order:after {
   clear: both;
 }
-/* line 526, components.less */
+/* line 528, components.less */
 .list-order .btn-mini {
   font-size: 12px;
   padding: 0 7px;
 }
-/* line 530, components.less */
+/* line 532, components.less */
 .list-order select {
   width: 75px;
   vertical-align: middle;
@@ -1152,28 +1154,28 @@ form {
   white-space: nowrap;
   box-sizing: border-box;
 }
-/* line 551, components.less */
+/* line 553, components.less */
 .quick-editor {
   background: none repeat scroll 0 0 #ffffff;
   margin-top: 10px;
   min-height: 88px;
   position: relative;
 }
-/* line 556, components.less */
+/* line 558, components.less */
 .quick-editor .btn {
   margin-top: 5px;
 }
-/* line 570, components.less */
+/* line 572, components.less */
 .pic-carousel .pic-main {
   margin-top: 10px;
 }
-/* line 573, components.less */
+/* line 575, components.less */
 .pic-carousel .pic-main .show-area {
   overflow: hidden;
   position: relative;
   width: 775px;
 }
-/* line 578, components.less */
+/* line 580, components.less */
 .pic-carousel .pre-arrow {
   background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
   cursor: pointer;
@@ -1187,7 +1189,7 @@ form {
   width: 0;
   left: 0;
 }
-/* line 591, components.less */
+/* line 593, components.less */
 .pic-carousel .next-arrow {
   background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
   cursor: pointer;
