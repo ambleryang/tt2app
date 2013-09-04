@@ -567,15 +567,78 @@
 
 // pic-body
 .pic-carousel {
-
+    padding:10px;
+    float: left;
+    background-color:#fff;
+    box-shadow:1px 1px 2px #CFCFCF, -1px -1px 2px #CFCFCF;
+}
+.pic-carousel .pic-head {
+    height:70px;
+    border-bottom:1px solid #cfcfcf;
+}
+.pic-carousel .pic-head .pic-index {
+    display: inline-block;
+    height: 30px;
+    li {
+        float: left;
+    }
+    .prompt {
+        margin-left: 20px;
+        color: @grayLight;
+    }
+}
+.pic-carousel .pic-head .pic-info {
+    height:40px;
+}
+.pic-carousel .pic-head .pic-info .ep-info {
+    float: right;
+    p {
+        float: left;
+        margin: 10px 0;
+    }
 }
 .pic-carousel .pic-main {
     margin-top: 10px;
+    height: 520px;
 }
 .pic-carousel .pic-main .show-area {
+    float: left;
     overflow: hidden;
     position: relative;
     width: 775px;
+}
+.pic-carousel .pic-main .pic-description {
+    padding: 0 0 0 10px;
+    float:left;
+    height: 520px;
+    width: 185px;
+    .ep-picinfo {
+        clear: both;
+        line-height: 20px;
+        overflow: hidden;
+        color: @grayLight;
+        padding: 5px 0 10px;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+}
+.pic-carousel .pic-list-main {
+    overflow: hidden;
+    padding-left: 50px;
+    text-align: center;
+}
+.pic-carousel .pic-list-main .pic-list-box {
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    width: 444px;
+    z-index: 0;
+}
+.pic-carousel .pic-list-main .pre-list,.pic-carousel .pic-list-main .next-list {
+    height: 38px;
+    overflow: hidden;
+    padding-top: 15px;
+    width: 14px;
 }
 .pic-carousel .pre-arrow {
     background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
@@ -602,6 +665,18 @@
     top: 0;
     width: 0;
     right: 0;
+}
+
+
+
+// Vertical dividing line component
+// -------------------------
+
+// pipe
+.pipe {
+  color: #D5D5D5;
+  font-style: normal;
+  padding: 0 5px;
 }
 
 

@@ -1165,17 +1165,97 @@ form {
 .quick-editor .btn {
   margin-top: 5px;
 }
-/* line 572, components.less */
-.pic-carousel .pic-main {
-  margin-top: 10px;
+/* line 569, components.less */
+.pic-carousel {
+  padding: 10px;
+  float: left;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #cfcfcf, -1px -1px 2px #cfcfcf;
 }
 /* line 575, components.less */
+.pic-carousel .pic-head {
+  height: 70px;
+  border-bottom: 1px solid #cfcfcf;
+}
+/* line 579, components.less */
+.pic-carousel .pic-head .pic-index {
+  display: inline-block;
+  height: 30px;
+}
+/* line 582, components.less */
+.pic-carousel .pic-head .pic-index li {
+  float: left;
+}
+/* line 585, components.less */
+.pic-carousel .pic-head .pic-index .prompt {
+  margin-left: 20px;
+  color: #999999;
+}
+/* line 590, components.less */
+.pic-carousel .pic-head .pic-info {
+  height: 40px;
+}
+/* line 593, components.less */
+.pic-carousel .pic-head .pic-info .ep-info {
+  float: right;
+}
+/* line 595, components.less */
+.pic-carousel .pic-head .pic-info .ep-info p {
+  float: left;
+  margin: 10px 0;
+}
+/* line 600, components.less */
+.pic-carousel .pic-main {
+  margin-top: 10px;
+  height: 520px;
+}
+/* line 604, components.less */
 .pic-carousel .pic-main .show-area {
+  float: left;
   overflow: hidden;
   position: relative;
   width: 775px;
 }
-/* line 580, components.less */
+/* line 610, components.less */
+.pic-carousel .pic-main .pic-description {
+  padding: 0 0 0 10px;
+  float: left;
+  height: 520px;
+  width: 185px;
+}
+/* line 615, components.less */
+.pic-carousel .pic-main .pic-description .ep-picinfo {
+  clear: both;
+  line-height: 20px;
+  overflow: hidden;
+  color: #999999;
+  padding: 5px 0 10px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+/* line 625, components.less */
+.pic-carousel .pic-list-main {
+  overflow: hidden;
+  padding-left: 50px;
+  text-align: center;
+}
+/* line 630, components.less */
+.pic-carousel .pic-list-main .pic-list-box {
+  float: left;
+  margin-right: 5px;
+  position: relative;
+  width: 444px;
+  z-index: 0;
+}
+/* line 637, components.less */
+.pic-carousel .pic-list-main .pre-list,
+.pic-carousel .pic-list-main .next-list {
+  height: 38px;
+  overflow: hidden;
+  padding-top: 15px;
+  width: 14px;
+}
+/* line 643, components.less */
 .pic-carousel .pre-arrow {
   background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
   cursor: pointer;
@@ -1189,7 +1269,7 @@ form {
   width: 0;
   left: 0;
 }
-/* line 593, components.less */
+/* line 656, components.less */
 .pic-carousel .next-arrow {
   background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
   cursor: pointer;
@@ -1202,4 +1282,10 @@ form {
   top: 0;
   width: 0;
   right: 0;
+}
+/* line 676, components.less */
+.pipe {
+  color: #D5D5D5;
+  font-style: normal;
+  padding: 0 5px;
 }
