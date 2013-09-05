@@ -1235,11 +1235,23 @@ form {
 }
 /* line 625, components.less */
 .pic-carousel .pic-list-main {
+  width: 725px;
   overflow: hidden;
   padding-left: 50px;
   text-align: center;
 }
-/* line 630, components.less */
+/* line 631, components.less */
+.pic-carousel .pic-sub-num {
+  height: 30px;
+  width: 775px;
+  margin-bottom: 10px;
+  color: #049cdb;
+}
+/* line 636, components.less */
+.pic-carousel .pic-sub-num strong {
+  font-size: 20px;
+}
+/* line 640, components.less */
 .pic-carousel .pic-list-main .pic-list-box {
   float: left;
   margin-right: 5px;
@@ -1247,7 +1259,7 @@ form {
   width: 444px;
   z-index: 0;
 }
-/* line 637, components.less */
+/* line 647, components.less */
 .pic-carousel .pic-list-main .pre-list,
 .pic-carousel .pic-list-main .next-list {
   height: 38px;
@@ -1255,7 +1267,7 @@ form {
   padding-top: 15px;
   width: 14px;
 }
-/* line 643, components.less */
+/* line 653, components.less */
 .pic-carousel .pre-arrow {
   background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
   cursor: pointer;
@@ -1269,7 +1281,7 @@ form {
   width: 0;
   left: 0;
 }
-/* line 656, components.less */
+/* line 666, components.less */
 .pic-carousel .next-arrow {
   background: url("images/blank.gif") no-repeat scroll 0 0 transparent;
   cursor: pointer;
@@ -1283,7 +1295,7 @@ form {
   width: 0;
   right: 0;
 }
-/* line 676, components.less */
+/* line 686, components.less */
 .pipe {
   color: #D5D5D5;
   font-style: normal;

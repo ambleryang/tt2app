@@ -171,13 +171,23 @@
             </div>
             <div class="pic-main">
                 <div class="show-area">
-                    <div class="pre-arrow"></div>
+                    <div class="pre-arrow">
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    </div>
                     <div class="show-photo"><img src="img/lunbo1.jpg" alt=""></div>
-                    <div class="next-arrow"></div>
+                    <div class="next-arrow">
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    </div>
                 </div>
                 <div class="pic-description">
                     <div class="ep-picinfo">图片描述：</div>
                     <p>茅家埠的那只小翠</p>
+                </div>
+            </div>
+            <div class="pic-sub-num">
+                <div class="pic-num pull-right">
+                    <strong>7</strong>/
+                    <span>20</span>
                 </div>
             </div>
             <div class="pic-list-main">
@@ -214,5 +224,12 @@
 		</span>
 	</div>
 </div>
+<script type="text/javascript">
+    $(".next-arrow, .pre-arrow").hover(function(){
+        $(this).find("a").css("visibility","visible");
+    },function(){
+        $(this).find("a").css("visibility","hidden");
+    })
+</script>
 </body>
 </html>
